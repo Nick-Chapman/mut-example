@@ -1,0 +1,26 @@
+name:                mut-example
+version:             0.1.0.0
+description:         Examples of using Mutable arrays in Haskell IO/ST monads
+license:             BSD3
+author:              Nick Chapman
+maintainer:          nic@amadido.co.uk
+github:              https://github.com/Nick-Chapman/mut-example.git
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+dependencies:
+- array
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -threaded
+- -rtsopts
+- -with-rtsopts=-N
+
+executables:
+  exe:
+    main:                Main.hs
+    source-dirs:         app
